@@ -5,29 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page 2</title>
-    <link rel="stylesheet" crossorigin href="/neur-plix/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/neur-plix/assets/styles-ChNY1fp5.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="header__container container">
+      <a href="#" class="header__logo">
+          Neur<span class="header__logo-accent">Plix</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#" class="header__link active">Главная</a></li>
+              <li class="header__item"><a href="#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="#methodology" class="header__link">Методология</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Карьерный блог</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
+              <li class="header__item"><a href="#contact" class="header__link">Контакты</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="header__btn btn btn--primary">
+              <span>Начать сейчас</span>
+          </a>
+          <button class="header__burger" aria-label="Открыть меню">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
-
 
     <main>
       <div class="container">
@@ -39,19 +49,66 @@
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="#" class="footer__logo">Neur<span>Plix</span></a>
+              <p class="footer__desc">
+                  Инновационная технология для построения карьеры, которая работает на вас.
+                  Переосмыслите подход к развитию с нами.
+              </p>
+              <div class="footer__socials">
+                  <a href="#" class="footer__social"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" class="footer__social"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#" class="footer__social"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Меню</h3>
+              <ul class="footer__list">
+                  <li><a href="#about">О платформе</a></li>
+                  <li><a href="#blog">Блог</a></li>
+                  <li><a href="#innovations">Инновации</a></li>
+                  <li><a href="#reviews">Отзывы</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__list">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>12 Avenue Pierre 1er de Serbie, 75116 Paris, France</span>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <a href="mailto:support@neur-plix.org">support@neur-plix.org</a>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:+33140506070">+33 1 40 50 60 70</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Neur-Plix. Все права защищены.</p>
+          <p>Платформа уже доступна в Европе.</p>
+      </div>
   </div>
 </footer>
-
   </body>
 </html>

@@ -1,56 +1,393 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/neur-plix/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neur-Plix | Карьерный апгрейд нового поколения</title>
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script type="module" crossorigin src="/neur-plix/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/neur-plix/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/neur-plix/assets/styles-ChNY1fp5.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
+  <div class="header__container container">
+      <a href="#" class="header__logo">
+          Neur<span class="header__logo-accent">Plix</span>
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+      <nav class="header__nav">
+          <ul class="header__menu">
+              <li class="header__item"><a href="#" class="header__link active">Главная</a></li>
+              <li class="header__item"><a href="#about" class="header__link">О платформе</a></li>
+              <li class="header__item"><a href="#methodology" class="header__link">Методология</a></li>
+              <li class="header__item"><a href="#blog" class="header__link">Карьерный блог</a></li>
+              <li class="header__item"><a href="#innovations" class="header__link">Инновации</a></li>
+              <li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
+              <li class="header__item"><a href="#contact" class="header__link">Контакты</a></li>
+          </ul>
+      </nav>
+
+      <div class="header__actions">
+          <a href="#contact" class="header__btn btn btn--primary">
+              <span>Начать сейчас</span>
+          </a>
+          <button class="header__burger" aria-label="Открыть меню">
+              <span></span>
+              <span></span>
+              <span></span>
+          </button>
+      </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
       
+
+  <section id="home" class="hero">
+      <canvas id="hero-canvas"></canvas> <div class="hero__content container">
+          <div class="hero__badge" data-aos="fade-down">Платформа уже доступна в Европе</div>
+          <h1 class="hero__title">
+              Карьера как <br> <span class="text-gradient">совершенный алгоритм</span>
+          </h1>
+          <p class="hero__subtitle">
+              Технология нового поколения для построения профессионального пути.
+              Используйте нейросетевой подход для квантового скачка в доходах.
+          </p>
+          <div class="hero__actions">
+              <a href="#contact" class="btn btn--primary">Переосмыслить развитие</a>
+              <a href="#about" class="btn btn--outline">Узнать детали</a>
+          </div>
+      </div>
+
+      <div class="hero__scroll">
+          <span>Scroll</span>
+          <div class="hero__scroll-line"></div>
+      </div>
+  </section>
+
+  <section id="about" class="section about">
+      <div class="container">
+          <div class="about__grid">
+              <div class="about__text">
+                  <h2 class="section-title">Инновационная технология</h2>
+                  <p class="section-desc">
+                      Neur-Plix — это не просто курсы. Это цифровая экосистема, анализирующая ваши навыки
+                      и строящая кратчайший маршрут к цели.
+                  </p>
+                  <ul class="about__list">
+                      <li><i class="fa-solid fa-check"></i> Стратегия роста на базе данных</li>
+                      <li><i class="fa-solid fa-check"></i> Персонализированный трек развития</li>
+                      <li><i class="fa-solid fa-check"></i> Экспертная поддержка на всех этапах</li>
+                  </ul>
+              </div>
+              <div class="about__image">
+                  <div class="about__card glass">
+                      <i class="fa-solid fa-chart-line"></i>
+                      <h3>+45%</h3>
+                      <p>Средний рост дохода за 3 месяца</p>
+                  </div>
+                  <div class="about__card glass">
+                      <i class="fa-solid fa-users"></i>
+                      <h3>2.5k+</h3>
+                      <p>Успешных кейсов во Франции</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="methodology" class="section methodology">
+      <div class="container">
+          <h2 class="section-title center">Методология Neur-Plix</h2>
+          <div class="cards-grid">
+              <div class="card glass-card">
+                  <div class="card__icon"><i class="fa-solid fa-brain"></i></div>
+                  <h3>Нейро-Анализ</h3>
+                  <p>Глубокий аудит ваших компетенций с помощью AI-инструментов для реальных задач.</p>
+              </div>
+              <div class="card glass-card">
+                  <div class="card__icon"><i class="fa-solid fa-route"></i></div>
+                  <h3>Построение Трека</h3>
+                  <p>Пошаговый путь, понятный каждому. От текущей точки до оффера мечты.</p>
+              </div>
+              <div class="card glass-card">
+                  <div class="card__icon"><i class="fa-solid fa-rocket"></i></div>
+                  <h3>Акселерация</h3>
+                  <p>Интенсивное внедрение навыков и решений, которые меняют правила игры.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class="ticker-section">
+      <div class="ticker-wrap">
+          <div class="ticker">
+              <span class="ticker__item">КАРЬЕРНЫЙ РОСТ •</span>
+              <span class="ticker__item">ПАССИВНЫЙ ДОХОД •</span>
+              <span class="ticker__item">AI ТЕХНОЛОГИИ •</span>
+              <span class="ticker__item">GLOBAL NETWORK •</span>
+              <span class="ticker__item">ИННОВАЦИИ •</span>
+              <span class="ticker__item">КАРЬЕРНЫЙ РОСТ •</span>
+              <span class="ticker__item">ПАССИВНЫЙ ДОХОД •</span>
+              <span class="ticker__item">КАРЬЕРНЫЙ РОСТ •</span>
+              <span class="ticker__item">ПАССИВНЫЙ ДОХОД •</span>
+              <span class="ticker__item">AI ТЕХНОЛОГИИ •</span>
+              <span class="ticker__item">GLOBAL NETWORK •</span>
+              <span class="ticker__item">ИННОВАЦИИ •</span>
+              <span class="ticker__item">КАРЬЕРНЫЙ РОСТ •</span>
+              <span class="ticker__item">ПАССИВНЫЙ ДОХОД •</span>
+              <span class="ticker__item">КАРЬЕРНЫЙ РОСТ •</span>
+              <span class="ticker__item">ПАССИВНЫЙ ДОХОД •</span>
+              <span class="ticker__item">AI ТЕХНОЛОГИИ •</span>
+              <span class="ticker__item">GLOBAL NETWORK •</span>
+              <span class="ticker__item">ИННОВАЦИИ •</span>
+              <span class="ticker__item">КАРЬЕРНЫЙ РОСТ •</span>
+              <span class="ticker__item">ПАССИВНЫЙ ДОХОД •</span>
+          </div>
+      </div>
+  </section>
+
+  <section id="innovations" class="section innovations">
+      <div class="container">
+          <div class="innovations__header">
+              <h2 class="section-title">Технологии будущего</h2>
+              <p>Мы используем передовую цифровую инфраструктуру.</p>
+          </div>
+          <div class="innovations__grid">
+              <div class="inn-card inn-card--large">
+                  <h3>AI-Ассистент 2.0</h3>
+                  <p>Личный ментор, доступный 24/7. Решения, которые работают на вас.</p>
+                  <div class="inn-card__bg"></div>
+              </div>
+              <div class="inn-card">
+                  <i class="fa-solid fa-database"></i>
+                  <h3>Big Data</h3>
+                  <p>Анализ рынка труда в реальном времени.</p>
+              </div>
+              <div class="inn-card">
+                  <i class="fa-solid fa-vr-cardboard"></i>
+                  <h3>VR-Симуляции</h3>
+                  <p>Тренировка интервью в виртуальной реальности.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="blog" class="section blog">
+      <div class="container">
+          <h2 class="section-title">Карьерный Блог</h2>
+          <div class="blog__grid">
+              <article class="blog-post">
+                  <div class="blog-post__img">
+                      <img src="img/placeholder.png" alt="AI Trends">
+                  </div>
+                  <div class="blog-post__content">
+                      <span class="blog-post__date">10 Дек 2025</span>
+                      <h3>Как AI меняет рынок труда Франции</h3>
+                      <a href="#" class="blog-post__link">Читать далее →</a>
+                  </div>
+              </article>
+              <article class="blog-post">
+                  <div class="blog-post__img">
+                      <img src="img/placeholder.png" alt="Soft Skills">
+                  </div>
+                  <div class="blog-post__content">
+                      <span class="blog-post__date">08 Дек 2025</span>
+                      <h3>Навыки, которые стоят дорого</h3>
+                      <a href="#" class="blog-post__link">Читать далее →</a>
+                  </div>
+              </article>
+              <article class="blog-post">
+                  <div class="blog-post__img">
+                      <img src="img/placeholder.png" alt="Relocation">
+                  </div>
+                  <div class="blog-post__content">
+                      <span class="blog-post__date">05 Дек 2025</span>
+                      <h3>Релокация: стратегии 2026 года</h3>
+                      <a href="#" class="blog-post__link">Читать далее →</a>
+                  </div>
+              </article>
+          </div>
+      </div>
+  </section>
+
+  <section id="reviews" class="section reviews">
+      <div class="container">
+          <h2 class="section-title center">Истории успеха</h2>
+          <div class="reviews__slider">
+              <div class="review-card">
+                  <div class="review-card__header">
+                      <div class="review-card__avatar"></div>
+                      <div>
+                          <h4>Alex M.</h4>
+                          <span>Senior Developer, Paris</span>
+                      </div>
+                  </div>
+                  <p>"Воплотите мечты в реальность — это про Neur-Plix. Увеличил рейт в 2 раза за месяц."</p>
+              </div>
+              <div class="review-card">
+                  <div class="review-card__header">
+                      <div class="review-card__avatar" style="background: #6366f1;"></div>
+                      <div>
+                          <h4>Sophie L.</h4>
+                          <span>Product Manager, Lyon</span>
+                      </div>
+                  </div>
+                  <p>"Удобная адаптация без сложностей. Система сама подсказала, где мои слабые места."</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+        <div class="contact__wrapper glass-panel">
+            <div class="contact__info">
+                <h2 class="section-title">Начать сейчас</h2>
+                <p>Оцените перспективы проекта. Заполните форму, чтобы получить бесплатную консультацию.</p>
+
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@neur-plix.org</span>
+                    </div>
+                    <div class="contact__item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>12 Avenue Pierre 1er de Serbie, Paris</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__content">
+
+                <form class="contact__form" id="leadForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+33..." required>
+                        <small class="error-msg" id="phoneError">Только цифры</small>
+                    </div>
+
+                    <div class="form-group captcha-group">
+                        <label id="captchaLabel">Сколько будет 3 + 5?</label>
+                        <input type="number" id="captchaInput" required>
+                    </div>
+
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Я согласен с <a href="./personal-data-policy.html">политикой обработки данных</a></label>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary form-btn">
+                        <span>Запросить доступ</span>
+                    </button>
+                </form>
+
+                <div class="form-success" id="formSuccess">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>Заявка принята!</h3>
+                    <p>Мы свяжемся с вами в ближайшее время.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+      <div class="footer__grid">
+          <div class="footer__col">
+              <a href="#" class="footer__logo">Neur<span>Plix</span></a>
+              <p class="footer__desc">
+                  Инновационная технология для построения карьеры, которая работает на вас.
+                  Переосмыслите подход к развитию с нами.
+              </p>
+              <div class="footer__socials">
+                  <a href="#" class="footer__social"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#" class="footer__social"><i class="fa-brands fa-telegram"></i></a>
+                  <a href="#" class="footer__social"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Меню</h3>
+              <ul class="footer__list">
+                  <li><a href="#about">О платформе</a></li>
+                  <li><a href="#blog">Блог</a></li>
+                  <li><a href="#innovations">Инновации</a></li>
+                  <li><a href="#reviews">Отзывы</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Информация</h3>
+              <ul class="footer__list">
+                  <li><a href="privacy.html">Privacy Policy</a></li>
+                  <li><a href="cookies.html">Cookie Policy</a></li>
+                  <li><a href="terms.html">Terms of Service</a></li>
+                  <li><a href="return.html">Return Policy</a></li>
+                  <li><a href="disclaimer.html">Disclaimer</a></li>
+                  <li><a href="personal-data-policy.html">Personal Data</a></li>
+              </ul>
+          </div>
+
+          <div class="footer__col">
+              <h3 class="footer__title">Контакты</h3>
+              <ul class="footer__contacts">
+                  <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <span>12 Avenue Pierre 1er de Serbie, 75116 Paris, France</span>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <a href="mailto:support@neur-plix.org">support@neur-plix.org</a>
+                  </li>
+                  <li>
+                      <i class="fa-solid fa-phone"></i>
+                      <a href="tel:+33140506070">+33 1 40 50 60 70</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="footer__bottom">
+          <p>&copy; 2025 Neur-Plix. Все права защищены.</p>
+          <p>Платформа уже доступна в Европе.</p>
+      </div>
   </div>
 </footer>
+    <div class="cookie-popup" id="cookiePopup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.</p>
+      <button class="btn btn--primary btn--sm" id="acceptCookies">Принять</button>
+    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   </body>
 </html>
