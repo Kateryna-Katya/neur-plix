@@ -974,3 +974,116 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991px) {
   .contact__wrapper { grid-template-columns: 1fr; padding: 30px; }
 }
+/* --- Legal Pages Styles --- */
+.pages {
+  padding-top: calc(var(--header-height) + 60px);
+  padding-bottom: 80px;
+  min-height: 80vh;
+}
+
+/* Ограничиваем ширину текста для удобного чтения */
+.pages__container {
+  max-width: 800px;
+}
+
+/* Заголовок страницы */
+.pages h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  background: linear-gradient(90deg, #fff, var(--color-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Подзаголовки */
+.pages h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Обычный текст */
+.pages p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+/* Вступление покрупнее */
+.pages .intro-text {
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  margin-bottom: 40px;
+}
+
+.pages strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Списки */
+.pages__list {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.pages__list li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.pages__list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  line-height: 1rem;
+  top: 5px;
+}
+
+/* Контактный блок на странице */
+.pages__contact {
+  margin-top: 60px;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+}
+
+.pages__contact h2 {
+  margin-top: 0;
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+
+.pages__contact p {
+  margin-bottom: 0;
+}
+
+.pages__contact a {
+  color: var(--color-primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 5px;
+  transition: var(--transition);
+}
+
+.pages__contact a:hover {
+  color: var(--color-accent);
+}
+
+/* Адаптив для текстовых страниц */
+@media (max-width: 768px) {
+  .pages h1 { font-size: 2rem; }
+  .pages h2 { font-size: 1.3rem; margin-top: 30px; }
+}
